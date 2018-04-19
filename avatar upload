@@ -1,15 +1,22 @@
-proces
 <?php
 session_start();
+$_SESSION['username'] = $_COOKIE['username'];
 $username = $_SESSION['username'];
+$_SESSION['userid'] = $_COOKIE['userid'];
+$userid = $_SESSION['userid'];
 
-$temp_location = $_FILES['userimage']['tmp_name'];
-$target_location2 = 'avatar/' . $username . $_FILES['userimage']['tmp_name'];
+
+
+$temp_location2 = explode( $username, $_FILES['userimage']['name']);
+
+$newfilename = $username . end($temp_location2);
+
+$target_location2 = 'avatar/' . $newfilename;
 
 
 if ($_FILES['userimage']['size'] < 500000)
 {
-    $result = move_uploaded_file($temp_location, $target_location);
+    $result = move_uploaded_file($_FILES["userimage"]["tmp_name"], $target_location2);
 
 
 } else {
@@ -17,16 +24,16 @@ if ($_FILES['userimage']['size'] < 500000)
 }
 
 if ($result){
-    $dbc = mysqli_connect('localhost', 'ticho', 'BOIPLOF' , '25030_wall');
-    $query = "INSERT INTO avatar VALUES (0, $username, $target_location)";
+    $dbc = mysqli_connect('localhost', 'ticho', 'BOIPLOF' , '25030_wall') or die('error connecting');
+    $query = "INSERT INTO avatar VALUES ('$userid','$username','$target_location2')" or die('error query');
     $result = mysqli_query($dbc, $query);
 
     mysqli_close($dbc);
 }
 header("Location: mainWall.php");
 
-navbar
-<?php
+
+  <?php
   $username = $_SESSION['username'];
   $username = htmlentities($username,ENT_QUOTES,'utf-8');
   $dbc = mysqli_connect('localhost', 'ticho', 'BOIPLOF' , '25030_wall');
@@ -34,6 +41,6 @@ navbar
 
   $result = mysqli_query($dbc, $query) or die ('gaat niet goed');
   $row = mysqli_fetch_array($result);
-  $id = $row['id'];
+  $id = $row['userid'];
   $locati = $row['locatie'];
   ?>
