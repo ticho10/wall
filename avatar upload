@@ -9,7 +9,7 @@ $userid = $_SESSION['userid'];
 
 $temp_location2 = explode( $username, $_FILES['userimage']['name']);
 
-$newfilename = $username . end($temp_location2);
+$newfilename = $username . '.' . $_FILES['userimage']['type'];
 
 $target_location2 = 'avatar/' . $newfilename;
 
