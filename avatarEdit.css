@@ -1,0 +1,27 @@
+body{
+    background: url("img/wall.jpg");
+    background-size: cover;
+}
+
+.preview{
+    display: none;
+    border: 1px solid black;
+    border-radius: 20em;
+    max-height: 150px;
+    max-width: 150px;
+    min-height: 50px;
+    min-width: 50px;
+    margin: auto;
+}
+
+.wrapper{
+    border-style: dashed;
+    border-color: black;
+    margin: auto;
+    margin-top: 4em;
+    text-align: center;
+    width: 25em;
+    background-color: #00FFFF;
+    border-radius: 2em;
+    padding-bottom: 1em;
+}

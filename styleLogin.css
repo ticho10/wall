@@ -1,0 +1,79 @@
+body{
+  background-image: url('img/wall.jpg');
+  background-size: cover;
+}
+
+.wrapper{
+  border-style: dashed;
+  border-color: black;
+  margin: auto;
+  width: 25em;
+  background-color: #00FFFF;
+  border-radius: 2em;
+  padding-bottom: 1em;
+}
+
+
+#username{
+  display: inline;
+}
+
+.middle {
+  text-align: center;
+}
+
+#password{
+    display: inline-block;
+}
+.input{
+    display: inline-block;
+}
+
+.loginButton{
+  display: block;
+  margin-top: 4px;
+  margin-left: 8em;
+  margin-right: auto;
+}
+
+#forgot{
+  display: block;
+  text-align: right;
+  margin-right: 2em;
+}
+#forgot:hover{
+  text-decoration: none;
+}
+
+#create:hover{
+  text-decoration: none;
+}
+
+#create{
+  margin-right: 2em;
+  display: block ;
+  text-align: right;
+}
+
+#other{
+  font-size: 18px;
+}
+
+.logoAbove{
+  margin-top: 3em;
+  margin-bottom: 2em;
+  width: 18em;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* .logoUnder{
+  margin-top: 2em;
+  margin-bottom: 3em;
+  width: 18em;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} */

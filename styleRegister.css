@@ -1,0 +1,70 @@
+
+body{
+  background-image: url('img/wall.jpg');
+  background-size: cover;
+}
+
+.wrapper{
+  border-style: dashed;
+  border-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25em;
+  background-color: #00FFFF;
+  border-radius: 2em;
+  padding-bottom: 1em;
+}
+
+#login{
+  margin-right: 15px;
+  font-size: 18px;
+}
+#login:hover{
+  text-decoration: none;
+}
+
+#middle{
+   text-align: center;
+ }
+
+
+
+.mail{
+  margin-right: -5px;
+  margin-left: auto;
+}
+
+.username{
+  margin-right: 22px;
+  margin-left: auto;
+}
+
+.password{
+  margin-right: 0.9em;
+  margin-left: auto;
+}
+#loginButton{
+  display: block;
+  margin-top: 4px;
+  margin-left: 8em;
+  margin-right: auto;
+}
+
+.logoAbove{
+  margin-top: 3em;
+  margin-bottom: 2em;
+  width: 18em;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* .logoUnder{
+  margin-top: 2em;
+  margin-bottom: 3em;
+  width: 18em;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} */

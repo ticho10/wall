@@ -1,0 +1,19 @@
+body{
+    background: url("img/wall.jpg");
+    background-size: cover;
+}
+h2{
+    text-align: center;
+}
+.wrapper{
+    padding-top: 1em;
+    border-style: dashed;
+    border-color: black;
+    margin: auto;
+    margin-top: 2em;
+    text-align: center;
+    width: 25em;
+    background-color: #00FFFF;
+    border-radius: 2em;
+    padding-bottom: 1em;
+}
